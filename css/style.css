@@ -21,6 +21,10 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* #endregion TYPOGRAPHY */
 
 /* #region COMMON */
