@@ -1,0 +1,64 @@
+/* #region TYPOGRAPHY */
+
+:root {
+    --header-bfooter-bg: #2c3e50;
+    --primary-bg: #1abc9c;
+    --primary-footer-bg: #3a546d;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+}
+
+
+body {
+    color: white;
+}
+
+/* #endregion TYPOGRAPHY */
+
+/* #region COMMON */
+
+/* #endregion COMMON */
+
+/* #region HEADER */
+
+header {
+    background-color: var(--header-bfooter-bg);
+}
+
+/* #endregion HEADER */
+
+/* #region MAIN */
+
+main section:nth-of-type(odd) {
+    background-color: var(--primary-bg);
+}
+
+main section:nth-of-type(even) {
+    color: var(--header-bfooter-bg)
+}
+
+/* #endregion MAIN */
+
+/* #region FOOTER */
+
+footer .top-footer {
+    background-color: var(--primary-footer-bg);
+}
+
+footer .bottom-footer {
+    background-color: var(--header-bfooter-bg);
+}
+
+/* #endregion FOOTER */
+
+/* #region MEDIA QUERIES */
+
+/* #endregion MEDIA QUERIES */
