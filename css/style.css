@@ -1,19 +1,15 @@
 /* #region TYPOGRAPHY */
 
 :root {
-    --header-bfooter-bg: #2c3e50;
-    --primary-bg: #1abc9c;
-    --primary-footer-bg: #3a546d;
+    --primary-color: #2c3e50;
+    --secondary-color: #1abc9c;
+    --top-footer-bg: #3a546d;
+    --custom-icon: "\f005";
 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
+h1 {
+    font-size: 2.375rem;
 }
 
 
@@ -27,6 +23,40 @@ a {
 
 /* #endregion TYPOGRAPHY */
 
+/* #region UTILITY */
+
+.strong {
+    font-weight: bold;
+}
+
+.custom-rule {
+    color: currentColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-rule .icon-decoration::before {
+    content: var(--custom-icon);
+    font-weight: 600;
+    font-size: 1.875rem;
+    font-family: 'Font Awesome\ 6 Free';
+
+}
+
+.custom-rule .line-decoration {
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    border-radius: 20px;
+}
+
+
+
+/* #endregion UTILITY */
+
 /* #region COMMON */
 
 /* #endregion COMMON */
@@ -34,7 +64,12 @@ a {
 /* #region HEADER */
 
 header {
-    background-color: var(--header-bfooter-bg);
+    background-color: var(--primary-color);
+}
+
+.navbar-toggler {
+    border: 2px solid gray;
+
 }
 
 /* #endregion HEADER */
@@ -42,11 +77,15 @@ header {
 /* #region MAIN */
 
 main section:nth-of-type(odd) {
-    background-color: var(--primary-bg);
+    background-color: var(--secondary-color);
 }
 
 main section:nth-of-type(even) {
-    color: var(--header-bfooter-bg)
+    color: var(--primary-color)
+}
+
+.jumbo .professions {
+    font-size: 1.25rem;
 }
 
 /* #endregion MAIN */
@@ -54,15 +93,76 @@ main section:nth-of-type(even) {
 /* #region FOOTER */
 
 footer .top-footer {
-    background-color: var(--primary-footer-bg);
+    background-color: var(--top-footer-bg);
 }
 
 footer .bottom-footer {
-    background-color: var(--header-bfooter-bg);
+    background-color: var(--primary-color);
 }
 
 /* #endregion FOOTER */
 
 /* #region MEDIA QUERIES */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    header .navbar-brand {
+        font-size: 1.875rem;
+    }
+
+    header .navbar-nav {
+        font-size: 1.125rem;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3.25rem;
+    }
+
+    .jumbo .professions {
+        font-size: 1.6875rem;
+
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px;
+    }
+
+    .custom-rule .line-decoration {
+        width: 170px;
+        margin: 0 33px 0 33px;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px;
+    }
+}
 
 /* #endregion MEDIA QUERIES */
