@@ -1,0 +1,33 @@
+/* #region UTILITY */
+
+.strong {
+    font-weight: bold;
+}
+
+.custom-rule {
+    color: currentColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-rule .icon-decoration::before {
+    content: var(--custom-icon);
+    font-weight: 600;
+    font-size: 1.875rem;
+    font-family: 'Font Awesome\ 6 Free';
+
+}
+
+.custom-rule .line-decoration {
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    border-radius: 20px;
+}
+
+
+
+/* #endregion UTILITY */
