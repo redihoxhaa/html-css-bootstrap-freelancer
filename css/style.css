@@ -23,6 +23,22 @@ a {
     text-decoration: none;
 }
 
+::placeholder {
+    color: var(--primary-color);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 /* #endregion TYPOGRAPHY */
 
 /* #region COMMON */
@@ -58,6 +74,23 @@ main section:nth-of-type(even) {
 
 .about p {
     font-size: 1.25rem;
+}
+
+.btn-custom {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1abc9c;
+    --bs-btn-border-color: #1abc9c;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #28d4b2;
+    --bs-btn-hover-border-color: #28d4b2;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #28d4b2;
+    --bs-btn-active-border-color: #28d4b2e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #1abc9c;
+    --bs-btn-disabled-border-color: #1abc9c;
 }
 
 /* #endregion MAIN */
