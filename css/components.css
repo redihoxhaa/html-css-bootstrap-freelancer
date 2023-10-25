@@ -29,14 +29,15 @@
 }
 
 .circle-btn {
+    display: inline-block;
     color: currentColor;
     border: 1px solid currentColor;
     border-radius: 50%;
     width: 55px;
+    line-height: 53px;
     height: 55px;
     font-size: 1.25rem;
     background-color: transparent;
 }
-
 
 /* #endregion COMPONENTS */
